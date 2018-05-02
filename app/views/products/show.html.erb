@@ -11,14 +11,16 @@
 </p>
 
 <p>
-  <strong>Image url:</strong>
-  <%= @product.image_url %>
+  <% if @product.image? %>
+<%= link_to(image_tag(@product.image.thumb.url, alt: 'Image'), @product.image.url, target: '_blank')  %>
+<% end %>
 </p>
 
 <p>
   <strong>Price:</strong>
   <%= @product.price %>
 </p>
+
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
