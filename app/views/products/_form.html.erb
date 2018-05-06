@@ -22,9 +22,8 @@
   </div>
 
   <div class="field">
-    <%= form.label :image_url %>
-    <% byebug %> 
-      <%= form.text_field :image_url, id: :product_image_url %>
+    <%= form.label :image %>
+      <%= form.file_field :image%>
   </div>
 
   <div class="field">
@@ -35,6 +34,18 @@
   <div class="actions">
     <%= form.submit %>
   </div>
+
+  <!-- Remove attached files -->
+<% if product.image? %>
+  <%= image_tag product.image.thumb.url %>
+  <div>
+    <% label_tag :remove_image do %>
+    Remove image
+    <% form.check_box :remove_image %>
+    <% end %>
+  </div>
+<% end %>
+
 
 
 <% end %>

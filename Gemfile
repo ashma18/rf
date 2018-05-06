@@ -4,11 +4,18 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.5.1'
 
 #Carrierwave upload
-gem 'carrierwave', '~> 1.0'
+gem 'carrierwave', '~>1.2.1'
 gem 'mini_magick'
 #Bootstrap
 gem 'bootstrap', '~> 4.0.0'
 gem 'jquery-rails' 
+
+#Devise authentication
+gem 'devise'
+#Credential management with dotenv
+gem 'dotenv-rails'
+#AWS FOG
+gem 'fog-aws'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.0'
 # Use sqlite3 as the database for Active Record
