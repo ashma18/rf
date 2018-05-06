@@ -1,7 +1,7 @@
 class Product < ApplicationRecord
+    has_many :line_items
     validates_presence_of :title
     mount_uploader :image, ImageUploader
-    has_many :line_items
     before_destroy :ensure_not_referenced_by_any_line_item
 
     private
