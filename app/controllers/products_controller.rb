@@ -5,6 +5,7 @@ class ProductsController < ApplicationController
   # GET /products.json
   def index
     @products = Product.all
+    authorize @products
   end
 
   # GET /products/1
@@ -15,6 +16,8 @@ class ProductsController < ApplicationController
   # GET /products/new
   def new
     @product = Product.new
+    authorize @product
+
   end
 
   # GET /products/1/edit
@@ -25,6 +28,8 @@ class ProductsController < ApplicationController
   # POST /products.json
   def create
     @product = Product.new(product_params)
+    @product.user = current_user
+    authorize @product
 
     respond_to do |format|
       if @product.save
@@ -61,14 +66,22 @@ class ProductsController < ApplicationController
     end
   end
 
+rescue_from Pundit::NotAuthorizedError, with: :user_not_authorized
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_product
       @product = Product.find(params[:id])
+      authorize @product
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_params
-      params.require(:product).permit(:title, :description, :image, :price)
+      params.require(:product).permit(:user_id, :title, :description, :image, :price)
+    end
+
+    #Pundit Error Message
+    def user_not_authorized
+    flash[:warning] = "You are not authorized to perform this action."
+    #redirect_to(request.referrer || root_path)
     end
 end
