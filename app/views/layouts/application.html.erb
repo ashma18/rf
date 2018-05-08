@@ -14,13 +14,6 @@
 
   <body>
     <%= render "layouts/navigation" %>
-    <div id= "flash" >
-      <% flash.each do |key, value | %>
-        <div class= "flash <%=key %>"> <%=value %> </div>
-      <% end %>
-    </div>
-    <div class= "container-fluid" >
-    <%= yield %>
-    </div>
+    <%= yield %> 
   </body>
 </html>

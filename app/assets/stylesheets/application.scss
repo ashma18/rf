@@ -13,7 +13,20 @@
  
  */
 
-// Custom bootstrap variables must be set or imported *before* bootstrap.
+ @import url('https://fonts.googleapis.com/css?family=Rubik');
+ // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap";
+ * {
+   font-family: Rubik;  
+ }
+
+ .bg-custom {
+   background-color: #FFF ;
+ }
+
+ .intro-2 {
+  background: image-url("kyle-ellefson-196124-unsplash.jpg")no-repeat center center;
+  background-size: 100%;
+}
 
 
