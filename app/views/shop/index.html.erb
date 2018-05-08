@@ -4,10 +4,9 @@
 
 <ul class="catalogue"> 
     <% cache @products do %>
-    
         <% @products.each do |product| %>
             <% cache product do %>
-                <div class="container-fluid">
+                <div=class"container-fluid">
                     <div class="row">
                         <div class="col">
                             <%= image_tag(product.image.thumb.url) %>
@@ -31,7 +30,6 @@
                 </div>
             <% end %>
         <% end %>
-    
     <% end %>
 </ul>
 
