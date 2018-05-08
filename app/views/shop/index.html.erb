@@ -5,6 +5,7 @@
 
 <ul class="catalogue"> 
     <% cache @products do %>
+    <li>
         <% @products.each do |product| %>
             <% cache product do %>
                     <%= image_tag(product.image_url) %>
@@ -18,5 +19,6 @@
                     </div>
             <% end %>
         <% end %>
+    </li>
     <% end %>
 </ul>
