@@ -1,6 +1,13 @@
 <% if notice %>
 <aside id="notice"><%= notice %></aside>
 <% end %>
+<%= search_form_for @search do |f| %>
+    <div class="field">
+        <%= f.label :title_cont %>
+        <%= f.text_field :title_cont %>
+    </div>
+    <div class="actions"><%= f.submit "Search" %></div>
+<% end %>
 <div class="container-fluid">
 <h1>Your Products</h1>
 <div class="col">
