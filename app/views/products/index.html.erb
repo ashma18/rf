@@ -1,12 +1,12 @@
 <% if notice %>
 <aside id="notice"><%= notice %></aside>
 <% end %>
+<div class="container-fluid">
 <h1>Your Products</h1>
+<div class="col">
 <%= link_to 'Create New product', new_product_path, class: 'btn btn-dark' %>
-
-  
+</div>
 <% @products.each do |product| %>
-  <div class="container-fluid">
     <div class="row">
       <div class="col">
         <%= image_tag(product.image.thumb.url, class: 'list_image') %>
@@ -21,6 +21,7 @@
         <%= link_to 'Destroy', product, method: :delete, data: {confirm: 'Are you sure?' }, class: 'btn btn-dark'%>
       </div>
     </div>
-  </div>
 <% end %> 
+
+</div>
 
