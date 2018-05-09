@@ -3,12 +3,24 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .back-1 {
+  background-size: cover;
+  background-repeat: no-repeat;
     max-height:100vh;
     max-width: 100vw;
   }
-  
-  .d-block {
-    max-height: 100%;
-    width: 100%;
-  
+
+  #backgroundimg{
+    // background-size: cover;
+    // background-position: center;
+    // background-repeat: no-repeat;
   }
+  
+  
+
+#myCarousel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-height: 80%;
+}
+  

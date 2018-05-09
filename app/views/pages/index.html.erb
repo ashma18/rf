@@ -1,38 +1,31 @@
+<div id="backgroundimg" class="container-fluid">
 <%= image_tag("kyle-ellefson-196124-unsplash.jpg", alt:"background image", class: "back-1") %>
+</div>
     
     <p> Routines to improve you life </p>
 
-<!--- CAROUSEL -->     
+<!--- CAROUSEL -->   
+<div class="row"> 
     <div id="myCarousel" class="carousel slide" data-ride="carousel" >
         <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
 
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-            <%= image_tag("dara_cover.jpg", alt:"first slide", class: "d-block w-100") %>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active .fullscreen ">
+            <%= image_tag("dara_carousel_1.jpg", alt:"first slide", class: "d-block w-100") %>
             </div>
             <div class="carousel-item">
-            <%= image_tag("dara_cover.jpg", alt:"first slide", class: "d-block w-100") %>
+            <%= image_tag("amy_carousel.JPG", alt:"first slide", class: "d-block w-100") %>
             </div>
             <div class="carousel-item">
-            <%= image_tag("dara_cover.jpg", alt:"first slide", class: "d-block w-100") %>
+            <%= image_tag("kylie_carousel.jpg", alt:"first slide", class: "d-block w-100") %>
             </div>
         </div>
-
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-        </a>
     </div>
-
-
-
+</div>
     <p> Subscribe! </p>
+
 
