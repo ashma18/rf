@@ -5,7 +5,8 @@
 
   <head>
     <title>TheRoutineFix</title>
-    
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
     
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -15,8 +16,7 @@
   </head>
 
   <body>
-  <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+  
     <%= render "layouts/navigation" %>
     <%= yield %> 
     <%= render "layouts/footer" %>
