@@ -24,6 +24,14 @@ width: 100%;
   font-family: Rubik;  
 }
 
+
+
+.flagflag {
+  font-color: red;
+  padding-top: 20%;
+  z-index: 50;
+}
+
  // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap";
 
@@ -93,7 +101,6 @@ width: 100%;
 }
 // Landing Page //
 #home{
-  background-color: #eaf3f4;
   background: url(/assets/kyle-ellefson-196124-unsplash.jpg) no-repeat center fixed;
   display: table;
   height: 100%;

@@ -45,7 +45,8 @@
       <div class="div-content">
         <h3 class="login-head">Sign Up to Routine Fix</h3>
         <hr />
-          <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+          <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+            <%= devise_error_messages! %>
             <div class="form-group">
               <%= f.label :first_name %>
               <%= f.text_field :first_name, class:"form-control"%>
