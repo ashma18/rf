@@ -65,10 +65,10 @@ A two sided marketplace of content where social media influencers can publish co
 
 ![a981cbef-bbf1-4197-85fb-6ab9c4d211b4](https://user-images.githubusercontent.com/35912668/39869115-a44ed40a-549f-11e8-83d9-55ad2bdf7759.png)
 
-#ERD
+## ERD
 ![project rf](https://user-images.githubusercontent.com/35912668/39870265-0a8809b8-54a4-11e8-9f15-526a06cf1c5e.png)
 
-#Future Roadmap
+## Future Roadmap
 * More sophisticated payment integration
 * Influencer profiles
 * Purchasing Podcasts
