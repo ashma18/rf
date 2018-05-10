@@ -2,6 +2,7 @@
 * Problem Definition and Solution
 	* Problem
 	* Solution
+* Links
 * User Stories
 * Workflow
 * Style Guide
@@ -16,6 +17,12 @@ Social media followers, are interested in more content in different mediums from
 
 #  Solution
 A two sided marketplace of content where social media influencers can publish content that can be paid for by followers. Example content can be ebooks, podcasts, videos, and recommended/promoted products.  A two-sided marketplace where influencers have a channel to deliver deeper content to their audience is a natural extension to their current revenue streams
+
+# Links
+[Live Website](http://rf-staging.herokuapp.com/)
+
+[Github Repo](https://github.com/ashma18/rf)
+
 
 # User Stories
 ![615cf1ed-a8f9-4ad1-8de4-637c23182830](https://user-images.githubusercontent.com/35912668/39869122-b80a618a-549f-11e8-911d-ea0dc9a62437.png)
