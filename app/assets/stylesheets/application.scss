@@ -56,14 +56,41 @@ width: 100%;
 .div-content {
   display: table-cell;
   vertical-align: middle;
+  padding: 1px;
 }
 
 .login-head {
   text-align: center;
 }
 
+// SIGN UP PAGE //
+.div-center-sign{
+  width: 400px;
+  height: 500px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+  padding: 2px;
+  border-bottom: 2px solid #ccc;
+  display: table;
+}
 
+.div-content-sign {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 1em;
+}
 
+.login-head-sign {
+  text-align: center;
+}
 // Landing Page //
 #home{
   background-color: #eaf3f4;
