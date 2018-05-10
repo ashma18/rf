@@ -2,3 +2,21 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+#cart_button{
+display: flex;
+align-items: center;
+justify-content: space-around;
+margin: 1px;
+padding: 3px;
+
+}
+
+#cart_table  {
+    margin: 1px;
+    padding: 5px;
+}
+
+#cart_head {
+    margin: 1px;
+    padding: 5px;
+}
