@@ -11,7 +11,7 @@
                 </div>
                 <div class="col-lg-6 col-sm-12 col-xs-12">
                     <h2> <%= product.title %> </h2>
-                    <h4> <%= product.user.first_name + " " + product.user.last_name %> </h4>
+                    <h5> By <%= product.user.first_name + " " + product.user.last_name %> </h5>
                     <h6> <%= product.description %> </h6>
                     <div class="price">
                         <%= number_to_currency(product.price) %>
@@ -19,7 +19,9 @@
                    
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                    <%= button_to 'Add to Cart', line_items_path(product_id: product),class: 'btn btn-dark' %>
+                    <div id=add_to_cart>
+                        <%= button_to 'Add to Cart', line_items_path(product_id: product),class: 'btn btn-dark' %>
+                    </div>
                 </div>
             </div>
         </div>

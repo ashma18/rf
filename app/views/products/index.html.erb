@@ -2,22 +2,22 @@
 <aside id="notice"><%= notice %></aside>
 <% end %>
 <div class="container-fluid">
-  <div class="row">
+  <div class="row" id="product_head">
     <div class="col-lg-6">
       <h1> Your Products </h1>
     </div>
     <div class="col-lg-6>">
-      <%= search_form_for @search do |f| %>
-          <div class="form-inline" id="product_search">
-            <%= f.label :title_cont %>
-            <%= f.text_field :title_cont, class:"form-control" %>
-            <%= f.submit "Search", class: 'btn btn-dark' %>
-          </div>
-      <% end %>
-    </div>
+      <div class="form-inline" id="product_search">
+        <%= search_form_for @search do |f| %>
+              <input class="form-control mr-sm-2" type="search" placeholder= "Search by title" aria-label="Search"<%= f.text_field :title_cont %>
+              <%= f.submit "Search", class: 'btn btn-dark' %>
+            </div>
+        <% end %>
+      </div>
   </div>
   <div class="row">
     <div class="col-lg-12">
+  <div id="create_product_button">
     <%= link_to 'Create New product', new_product_path, class: 'btn btn-dark' %>
     </div>  
   </div>

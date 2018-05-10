@@ -6,3 +6,9 @@
 #shop {
     padding: 10px;
 }
+
+#add_to_cart {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}

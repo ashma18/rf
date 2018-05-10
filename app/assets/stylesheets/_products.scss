@@ -8,13 +8,14 @@
 
 #products_search {
     padding: 10px;
-    
+    display: flex;
+    justify-content: space-around;
 }
 
-// #pd_search {
-//     display: flex;
-//     align-items: flex-end;
-//     justify-content: space-between;
-// }
+#product_head{
+    padding: 10px;
+}
 
-
+#create_product_button {
+    
+}
